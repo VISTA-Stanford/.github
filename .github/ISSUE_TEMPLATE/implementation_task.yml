@@ -1,0 +1,71 @@
+# This source file is part of the VISTA-Stanford projects
+#
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see AUTHORS.md)
+#
+# SPDX-License-Identifier: MIT
+#
+
+name: "🛠️ Implementation Task"
+description: Track basic implementation work or subtasks for planned functionality.
+title: "Task: [Brief description here]"
+labels: ["implementation", "task"]
+assignees: []
+projects: []
+type: task
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe what this task is implementing and how it relates to other features or issues.
+      placeholder: e.g. "Implements `extract_state_nodes` function for DAG graph builder."
+    validations:
+      required: false
+
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Subtasks or Checklist
+      description: Optionally break this work down into smaller subtasks.
+      placeholder: |
+        - [ ] Write initial function
+        - [ ] Add unit tests
+        - [ ] Integrate with pipeline
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Implementation Details
+      description: Add any design constraints, performance considerations, or relevant links.
+      placeholder: Optional notes for whoever implements the task.
+    validations:
+      required: false
+
+  - type: input
+    id: assignees
+    attributes:
+      label: Assignees (Optional)
+      description: GitHub usernames to assign this task to (comma-separated).
+      placeholder: e.g. monalisa,nat
+    validations:
+      required: false
+
+  - type: input
+    id: project_ids
+    attributes:
+      label: Project IDs (Optional)
+      description: GitHub project IDs to associate with this task (comma-separated).
+      placeholder: e.g. github/1,github/2
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code Guidelines
+      description: Confirm you’ve reviewed the coding conventions and project contribution rules.
+      options:
+        - label: I agree to follow the Coding Guidelines for this project
+          required: true

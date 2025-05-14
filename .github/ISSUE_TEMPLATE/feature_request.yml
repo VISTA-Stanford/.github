@@ -1,0 +1,63 @@
+#
+# This source file is part of the VISTA-Stanford projects
+#
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see AUTHORS.md)
+#
+# SPDX-License-Identifier: MIT
+#
+
+name: 🚀 Feature Suggestion
+description: Propose a new feature for this project
+title: "Feature Suggestion: Provide a descriptive title here."
+labels: ["enhancement", "major version bump"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        thank you for taking the time to suggest a new feature for this project!
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use Case
+      description: Describe the context or situation where this feature would be used.
+      placeholder: Clear and concise description of where or how the feature will be applied.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to Address
+      description: Describe the specific issue or need that this feature will solve.
+      placeholder: A description of the problem or need that this feature addresses.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Feature
+      description: Provide a clear and detailed explanation of the feature and its intended functionality.
+      placeholder: Detailed explanation of the feature and how it will work.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe any alternative solutions or existing features you have considered. Does other software offer this behavior? If so, how does it work?
+      placeholder: Description of alternative solutions or existing software with similar behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: additionalcontext
+    attributes:
+      label: Additional Information
+      description: Add any extra context or details that might help clarify your feature request.
+      placeholder: Any extra context or details related to your feature request.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code Guidelines
+      description: By submitting this issue, you confirm that you will adhere to the [Coding Guidelines](https://github.com/DaneshjouLab/.github/blob/main/CODING_GUIDELINES.md)
+      options:
+        - label: I agree to follow the Coding Guidelines for this project
+          required: true

@@ -1,0 +1,47 @@
+#
+# This source file is part of the VISTA-Stanford projects
+#
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see AUTHORS.md)
+#
+# SPDX-License-Identifier: MIT
+#
+
+name: "\U0001F3AF: Enhancement"
+description: Propose an internal improvement or optimization for the project
+title: "Enhancement: Provide a clear, descriptive title here."
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an internal improvement for this project!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the issue or limitation that this improvement will address.
+      placeholder: A description of the issue or limitation that this improvement will address.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Improvement
+      description: Provide a detailed explanation of the proposed improvement and how it should function.
+      placeholder: Detailed explanation of the proposed improvement and how it should function.
+    validations:
+      required: true
+  - type: textarea
+    id: additionalcontext
+    attributes:
+      label: Additional Information
+      description: Include any additional information that might help understand or implement this improvement.
+      placeholder: Any additional information that might help understand or implement this improvement.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code Guidelines
+      description: By submitting this issue, you confirm that you will adhere to the [Coding Guidelines](https://github.com/DanehsjouLab/.github/blob/main/CODING_GUIDELINES.md)
+      options:
+        - label: I agree to follow the Coding Guidelines for this project
+          required: true
