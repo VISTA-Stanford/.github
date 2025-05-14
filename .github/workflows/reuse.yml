@@ -1,0 +1,21 @@
+#
+# This source file is part of the VISTA-Stanford projects
+
+# SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+#
+# SPDX-License-Identifier: MIT
+#
+
+name: REUSE Compliance Check
+
+on:
+  workflow_call:
+
+jobs:
+  reuse:
+    name: REUSE Compliance Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: REUSE Compliance Check
+        uses: fsfe/reuse-action@v5
